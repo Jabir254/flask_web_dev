@@ -52,18 +52,22 @@
             <h2>Open Position</h2>
             <p>
               {% for job in jobs%}
-                <div class="border-bottom">
-                  <h4 class="text-dark-emphasis">{{job['title']}}</h4>
-                  <div class="text-info mb-2"><b>Location</b>: {{job['location']}}</div>
-                  {% if 'salary' in job %}
-                    <div class="mb-2">Salary: {{job['salary']}}</div>
-                  {% endif %}
+                <div class="row border-bottom">
+                  <div class="col-9">
+                    <h4 class="text-dark-emphasis">{{job['title']}}</h4>
+                    <div class="text-info mb-2"><b>Location</b>: {{job['location']}}</div>
+                    {% if 'salary' in job %}
+                      <div class="mb-2 pt-0">Salary: {{job['salary']}}</div>
+                    {% endif %}
+                  </div>
+                  <div class="col-2"><button type="button" class="btn btn-outline-success mt-sm-4">Apply</button></div>
                 </div>
               {% endfor%}
+              
             </p>
             <div style="text-align: center;">
               <button type="button" class="btn btn-outline-primary">Contanct Us</button>
-              <p>Copyright 2022, Careers</p>
+              <p class="mt-1">Copyright 2022, Careers</p>
             </div>
             
         </div>
