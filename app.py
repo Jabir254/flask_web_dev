@@ -6,26 +6,26 @@ JOBS = [
     {
         'id': 1,
         'title': 'Data Scientist',
-        'location':'Nairobi',
-        'salary': 'Kes. 400000'
+        'location':'Nairobi, Kenya',
+        'salary': 'Kes. 400,000'
     },
     {
         'id': 2,
         'title': 'Backend Engineer',
-        'location':'Nairobi',
-        'salary': 'Kes. 350000'
+        'location':'Nairobi, Kenya',
+        'salary': 'Kes. 350,000'
     },
     {
         'id': 3,
         'title': 'Web Developer',
-        'location':'Nairobi',
-        'salary': 'Kes. 300000'
+        'location':'Nairobi, Kenya',
+        'salary': 'Kes. 300,000'
     },
     {
         'id': 4,
         'title': 'Data Analyst',
-        'location':'Nairobi',
-        'salary': 'Kes. 250000'
+        'location':'Nairobi, Kenya',
+        'salary': 'Kes. 250,000'
     }
 ]
 

@@ -35,7 +35,7 @@
             </ul>
             <form class="d-flex">
               <input class="form-control me-sm-2" type="search" placeholder="Search">
-              <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+              <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
             </form>
           </div>
         </div>
@@ -51,10 +51,18 @@
             <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Velit dignissim sodales ut eu sem integer. Sollicitudin tempor id eu nisl nunc mi. Parturient montes nascetur ridiculus mus mauris vitae ultricies. Sed viverra tellus in hac habitasse platea. Ac felis donec et odio pellentesque. Mattis aliquam faucibus purus in. Nisl pretium fusce id velit ut tortor pretium. </p>
             <h2>Open Position</h2>
             <p>
-              {{jobs}}
+              {% for job in jobs%}
+                <div class="border-bottom">
+                  <h4 class="text-dark-emphasis">{{job['title']}}</h4>
+                  <div class="text-info mb-2"><b>Location</b>: {{job['location']}}</div>
+                  {% if 'salary' in job %}
+                    <div class="mb-2">Salary: {{job['salary']}}</div>
+                  {% endif %}
+                </div>
+              {% endfor%}
             </p>
             <div style="text-align: center;">
-              <button>Contanct Us</button>
+              <button type="button" class="btn btn-outline-primary">Contanct Us</button>
               <p>Copyright 2022, Careers</p>
             </div>
             
